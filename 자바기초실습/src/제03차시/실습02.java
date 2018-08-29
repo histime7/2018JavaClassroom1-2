@@ -5,7 +5,7 @@ public class 실습02 {
 		String a = "통신과";
 
 		String b[] = { "인천", "전자", "마이스터고" };
- 
+
 		String c[] = new String[3];
 		c[0] = "인천";
 		c[1] = "전자";
