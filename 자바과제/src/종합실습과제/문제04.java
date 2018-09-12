@@ -6,6 +6,7 @@ public class ¹®Á¦04 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		String a=sc.next();
-		System.out.println( (char)(a.charAt(0)-32) );	
+		System.out.println( (char)(a.charAt(0)-32) );
+		sc.close();
 	}
 }
