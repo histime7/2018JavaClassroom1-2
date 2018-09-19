@@ -1,18 +1,17 @@
 package 변수유효범위1;
 
 public class Test2 {
-	int a=1, b=2;
-	static int d=11;
+	int a=1, b=2, c=3;
 	
 	Test2() {
 		//분석(1)
-		int a = 3;
+		int a = 4;
 		System.out.println("a:" + a);
 
 		//분석(2)
 		System.out.print("c:");
 		for (int b = 1; b <= 5; b++) {
-			int c = 4;
+			int c = 5;
 			System.out.print(c + " ");
 			a = a + b;
 		}
@@ -20,23 +19,23 @@ public class Test2 {
 		System.out.println("c:" + c);
 
 		//분석(3)
-		int d = 5;
-		System.out.println("d:" + d);
+		int b = 6;
+		System.out.println("b:" + b);
 
 		//분석(4)
-		int c = 6;
-		if (a > 0) {
-			System.out.println("c:" + c);
+		if (c > 4) {
+			int d = 7;
+			System.out.println("d:" + d);
 		}
-
-		{
-			int e = 7;
-			System.out.println("e:" + " ");
-		}
-		System.out.println("c:" + c + ", e:" + e);
+		System.out.println("d:" + d);
 		
 		//분석(5)
-		System.out.println("a:" + a + ", b:" + b + ", c:" + c + ", d:" + d + ", e:" + e);
-		System.out.println("static 변수 d값: " + Test2.d);
+		method1(8);
+		System.out.println("a:" + a + ", b:" + b + ", c:" + c);
+	}
+	
+	void method1(int a) {
+		int b=9;
+		System.out.println("a:" + a + ", b:" + b + ", c:" + c);
 	}
 }
