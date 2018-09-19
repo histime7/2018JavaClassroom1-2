@@ -1,4 +1,4 @@
-package 변수유효범위예제1;
+package 변수유효범위1;
 
 public class Test2 {
 	int a=1, b=2;
